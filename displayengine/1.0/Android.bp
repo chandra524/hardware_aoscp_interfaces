@@ -1,0 +1,15 @@
+hidl_interface {
+    name: "vendor.aoscp.displayengine@1.0",
+    root: "vendor.aoscp",
+    srcs: [
+        "types.hal",
+        "IDisplayModes.hal",
+    ],
+    interfaces: [
+        "android.hidl.base@1.0",
+    ],
+    types: [
+        "DisplayMode",
+    ],
+    gen_java: true,
+}
