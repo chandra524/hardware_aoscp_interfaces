@@ -2,10 +2,15 @@ hidl_interface {
     name: "vendor.aoscp.touch@1.0",
     root: "vendor.aoscp",
     srcs: [
+        "types.hal",
         "IFingerprintNavigation.hal",
+        "ITouchscreenGesture.hal",
     ],
     interfaces: [
         "android.hidl.base@1.0",
+    ],
+    types: [
+        "Gesture",
     ],
     gen_java: true,
 }
