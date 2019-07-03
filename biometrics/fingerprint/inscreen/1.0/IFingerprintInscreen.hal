@@ -17,6 +17,8 @@
 
 package vendor.aoscp.biometrics.fingerprint.inscreen@1.0;
 
+import IFingerprintInscreenCallback;
+
 interface IFingerprintInscreen {
     /**
      * Called when fingerprint enrollment started
@@ -71,4 +73,9 @@ interface IFingerprintInscreen {
      * according to the previous events.
      */
     shouldBoostBrightness() generates (bool ret);
+    /**
+     * This function is used to register a callback function which is
+     * called by the HAL whenever there is a finger up/down event.
+     */
+    oneway setCallback(IFingerprintInscreenCallback callback);
 };
