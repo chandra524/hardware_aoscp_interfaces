@@ -3,7 +3,6 @@ hidl_interface {
     root: "vendor.lineage",
     srcs: [
         "IFingerprintInscreen.hal",
-        "IFingerprintInscreenCallback.hal",
     ],
     interfaces: [
         "android.hidl.base@1.0",
